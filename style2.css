@@ -1,0 +1,808 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Nabla&family=Prompt:wght@100;200;300;900&display=swap');
+*{
+    margin: 0;
+    font-family: system-ui;
+}
+
+.container{
+    height: 100vh;
+}
+
+.a{
+    margin-top: 90px;
+    display: flex;
+}
+
+.a1{
+    min-height: 600px;
+    width: 600px;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.p11{
+    font-family: system-ui;
+    font-size: 65px;
+    font-weight: bold;
+}
+
+.p12{
+    font-size: 17px;
+    font-weight: none;
+}
+
+.img1{
+    width: 350px;
+    margin: 30px 0 0 30px;
+}
+
+.a2{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    height: 100px;
+}
+
+.a2 a{
+    padding: 15px 20px;
+    border: 1px solid #f0f0f0;
+    text-decoration: none;
+    color: black;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .5s all ease;
+}
+
+.a2 a:hover{
+    margin-bottom: 10px;
+    border-color: #bbb;
+}
+
+#main{
+    background: brown;
+    min-height: 300px;
+    /* border-style: solid;
+    border-width: 20px;
+    border-color: black; */
+    border-top: 20px red solid;
+    border-left: solid 20px black;
+    border-right: solid 20px blue;
+    border-bottom: solid 20px forestgreen;
+}
+
+#main2{
+    background: teal;
+    min-height: 30%;
+    padding: 20px;
+}
+
+.main3{
+    min-height: 500px;
+    background: yellow;
+    padding: 20px;
+}
+
+.main1a{
+    min-height: 500px;
+    background-color: rgb(255, 214, 98);
+}
+
+.p1{
+    color: white;
+    text-align: center; 
+    text-decoration: overline;
+    text-transform: capitalize;
+    text-indent: 20px;
+    letter-spacing: 10px;
+    word-spacing: 30px;
+    text-overflow: ellipsis;
+    background: #000;
+    padding: 20px;
+    border-radius: 30px;
+    font-family: 'Nabla', cursive;
+    /* margin: 30px 10px; */
+    margin:0 50px 0 50px;
+    /* animation-name: boma;
+    animation-duration: 5s;
+    animation-timing-function: ease;
+    animation-delay: 1000ms;
+    animation-direction: alternate;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite; */
+    animation: boma 5s ease 1s both infinite;
+}
+
+/* Writing an animation code using the @keyframes */
+
+@keyframes boma {
+    0%{
+        color: #0d52d5;
+    }
+    25%{
+        color: darkgreen;
+    }
+    50%{
+        color: chocolate;
+    }
+    75%{
+        color: burlywood;
+    }
+    100%{
+        color: darkmagenta;
+    }
+}
+
+.p2{
+    font-family: 'Bungee Spice', cursive;
+    background: #007acc;
+    /* padding for top right bottom left */
+    padding: 20px 10px 20px 10px;
+    /* padding for top and botom left and right */
+    padding: 20px 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.p3{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    font-weight: bold;
+    font-style: italic;
+    
+}
+
+.p4{
+    font-family: 'Prompt', sans-serif;
+    text-align: center;
+    font-weight: 200;
+    font-variant: none;
+}
+
+.new{
+    min-height: 500px;
+    background-image: url(./super/1197_uhd.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    /* the default flex direction of a flex box is leeft to right which is row which means once a cntainer is given a display property and value of flex the flex iitems which are the boxex or content of the flex-container obey a left to right movement instead of the normal flow of html which is column*/
+    flex-direction: row; /* default */
+    align-items: center; /* this is for cross axis  */
+    justify-content: space-around;/* this is for main axis  */
+    flex-wrap: wrap;
+    /* background-clip: content-box; */
+}
+
+.news{
+    height: 200px;
+    width: 200px;
+    background: grey;
+    margin: 30px;
+    /* display: inline-block; */
+    padding: 20px;
+    border-radius: 10px;
+    vertical-align: top;
+    font-family: 'Prompt', sans-serif;
+    color: #f9d880;
+    position: absolute;
+    animation: animate 2s infinite ease both;
+}
+
+@keyframes animate {
+    0%{
+        margin-bottom: 0;
+    }
+    50%{
+        margin-bottom: 35px;
+        transform: rotate(360deg);
+        padding: 40px;
+    }
+    100%{
+        margin-bottom: 0;
+    }
+}
+
+.news1{
+    /* display: none; */
+    margin-bottom: 220px;
+    margin-left: 200px;
+    background: teal;
+}
+
+.news2{
+    background: #007acc;
+    margin-bottom: 170px;
+    margin-left: 150px;
+}
+
+.news3{
+    background: #f9d880;
+    margin-bottom: 100px;
+    margin-left: 100px;
+    color: rgb(0, 122, 204);
+}
+
+.header{
+    min-height: 50px;
+    padding: 20px 40px;
+    background: #fff;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+}
+
+.header nav{
+    display: flex;
+}
+
+.header ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+}
+.header ul li{
+    margin: 0 20px;
+}
+
+.header .fa{
+    font-size: 40px;
+    display: none;
+}
+
+.header ul li a{
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
+    font-family: system-ui;
+    color: black;
+}
+
+.header div a{
+    text-decoration: none;
+    padding: 12px 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: 20px;
+    color: black;
+    margin-right: 5px;
+    font-weight: bold;
+    font-family: system-ui;
+    transition-property: all;
+    transition-duration: 1000ms;
+}
+
+.man{
+    display: flex;
+    min-height: 100px;
+    padding: 20px 0;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 60px;
+}
+
+.man img{
+    width: 100px;
+    margin-right: 30px;
+}
+
+.header div a:hover{
+    border-color: #0d52d5;
+}
+
+.header div button, .a1 button{
+    padding: 12px 20px;
+    border-radius: 10px;
+    font-size: 20px;
+    width: 220px;
+    font-weight: bold;
+    font-family: system-ui;
+    border: none;
+    background: black;
+    color: white;
+    cursor: pointer;
+    /* transition-property: all;
+    transition-duration: 1500ms;
+    transition-timing-function: ease; */
+
+    /* Same as the short hand method below */
+    Transition: 1500ms all ease;
+}
+
+.header div button:hover, .a1 button:hover{
+    background: #0d52d5;
+}
+
+.relative{
+    min-height: 50px;
+    background: purple;
+    /* position fixed */
+    position: relative;
+    top: 10px;
+    right: 0;
+    left: 0;
+}
+
+.sticky{
+    height: 100px;
+    background: red;
+    position: sticky;
+    bottom: 0;
+}
+
+.woman{
+    padding: 60px 20px 60px 50px;
+    display: flex;
+}
+
+.sugar{
+    font-family: system-ui;
+    width: 30%;
+    min-height: 300px;
+    padding-right: 30px;
+}
+
+.tea{
+    width: 70%;
+    min-height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.ways{
+    margin-top: 60px;
+}
+
+.ways h1{
+    font-size: 40px;
+}
+
+.ways p{
+    font-size: 18px;
+}
+
+.ways button{
+    font-size: 20px;
+    background: black;
+    color: white;
+    padding: 18px;
+    border-radius: 10px;
+    border: none;
+    transition: all ease-in-out .5s;
+}
+
+.ways button:hover{
+    background: #0d52d5;
+}
+
+.pikin{
+    box-sizing: border-box;
+    width: 350px;
+    min-height: 300px;
+    background: #f9f9f9;
+    margin: 20px;
+    padding: 30px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.pikin img{
+    width: 50px;
+    display: block;
+}
+
+.pikin p:nth-child(2){
+    font-family: system-ui;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 25px 0 15px 0;
+}
+
+.pikin p:nth-child(3){
+    font-family: system-ui;
+    font-size: 17px;
+    line-height: 30px;
+    height: 135px;
+}
+
+.pikin p:nth-child(4){
+    font-family: system-ui;
+    font-size: 17px;
+    font-weight: 500;
+    text-transform: capitalize;
+    width: 200px;
+    transition: .3s all ease-in-out;
+}
+
+.pikin p .fa-long-arrow-right{
+    padding: 10px;
+    background: #e4f0fd;
+    border-radius: 50px;
+    margin-right: 10px;
+    color: #2f59aa;
+}
+
+.tea .pikin:nth-child(2) p:nth-child(4) .fa{
+    background: #e7f5fd;
+    color: #58a9fd;
+
+}
+
+.tea .pikin:nth-child(3) p:nth-child(4) .fa{
+background: #e7fdf0;
+color: #34ac62;
+}
+
+.tea .pikin:nth-child(4) p:nth-child(4) .fa{
+background: #fbe9f5;
+color: #e850a1;
+}
+
+#qr {
+    min-height: 90px;
+    padding-left: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#q img{
+    position: absolute;
+    height: 550px;
+    padding-top: 50px;
+    padding-left: 200px;
+}
+
+#r{
+    padding-top: 120px;
+    padding-left: 100px;
+}
+
+#r p.r0 {
+    padding: 7px;
+    width: 170px;
+    background: #f7f0ff;
+    color: #7913e5;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 100px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#r h1{
+    font-size: 50px;
+}
+
+#r p.r1{
+    line-height: 30px;
+    font-size: 18px;
+    text-align: justify;
+    /* width: 600px; */
+    background: none;
+    color: #353535;
+}
+
+#r p.r2{
+    color: #7913e5;
+    font-weight: 500;
+    font-size: 17px;
+}
+
+#q{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 20px;
+}
+
+#q .q0{
+height: 100px;
+width: 100px;
+border-radius: 100%;
+border: 100px solid #f5eefd;
+position: absolute;
+left: 120px;
+margin-top: 150px;
+}
+
+#space{
+    background: #ffffff;
+    height: 200px;
+}
+
+#op{
+    display: flex;
+    background: #0d60d8;
+    min-height: 500px;
+}
+
+#o{
+    cursor: pointer;
+    background: #0d60d8;
+    color: #fff;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 25px;
+    font-weight: bolder;
+    padding-left: 50px;
+    padding-top: 50px;
+    width: 60%;
+}
+
+#o p{
+    font-weight: 400;
+    padding-top: 20px;
+    font-size: 20px;
+}
+
+#o .o1{
+    height: 60px;
+    width: 250px;
+    position: relative;
+    z-index: 1;
+}
+
+#o .o1:before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 15px;
+    width: 50%;
+    border-bottom: 10px solid #000;
+}
+
+#o p .fa-long-arrow-right{
+    padding: 10px;
+    background: #fff;
+    color: #2295f2;
+    border-radius: 100px;
+    margin-right: 10px;
+    /* z-index: 999; */
+}
+
+#p {
+    background-image: url(1197_uhd.jpg);
+    height: 500px;
+    width: 40%;
+    background-size: cover;
+}
+
+#qr{
+    display: flex;
+    background: #fff;
+}
+
+#qr .r{
+    width: 60%;
+}
+
+/* responsive navbar styling */
+
+.resNav{
+    z-index: 999;
+    position: fixed;
+    top: -450px;
+    left: 0;
+    right: 0;
+    background: white;
+    min-height: 50px;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    /* visibility: hidden; */
+    transition: 1s all ease-in-out;
+}
+
+.resNavBar{
+    display: none;
+    transition: 1s all ease-in-out;
+}
+
+.navBar{
+    display: none;
+}
+
+.navBar p, .resNavBar p{
+    width: 30px;
+    border-top: 3px solid black;
+    margin: 5px 0;
+}
+
+.resNav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.resNav ul li{
+    margin: 20px;
+}
+
+.resNav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.resNav > div:nth-child(1){
+    position: fixed;
+    right: 40px;
+    top: 30px;
+}
+
+.resNav > div:nth-child(3){
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 20px;
+}
+
+.resNav > div a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.resNav > div button{
+    padding: 12px 20px;
+    border-radius: 10px;
+    font-size: 20px;
+    width: 220px;
+    font-weight: bold;
+    font-family: system-ui;
+    border: none;
+    background: black;
+    color: white;
+    cursor: pointer;
+    Transition: 1500ms all ease;
+}
+
+/* Media query */
+
+@media (max-width: 1097px) {
+
+    .a{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .headerButton{
+        display: none;
+    }
+
+    .header{
+        gap: 10px;
+    }
+
+    /* .header .fa{
+        display: block;
+    } */
+
+    .navBar{
+        display: block;
+    }
+
+    .header ul{
+        display: none;
+    }
+
+    .a1{
+        align-items: center;
+        gap: 5px;
+        min-height: 500px;
+        padding-top: 100px;
+    }
+
+    .a11{
+        padding-top: 0;
+    }
+
+    .p11{
+        text-align: center;
+        font-weight: 500;
+    }
+
+    .p12{
+        text-align: center;
+        width: 500px;
+    }
+
+    .man{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+    }
+    .h21{
+        font-family: system-ui;
+        text-align: center;
+    }
+
+    .secureP{
+        font-family: system-ui;
+        text-align: center;
+    }
+}
+
+@media (max-width: 700px){
+
+    .a1{
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .p11{
+        text-align: center;
+        font-size: 50px;
+    }
+
+    .p12{
+        text-align: center;
+        width: 100%;
+    }
+
+    .header img{
+        width: 150px;
+    }
+    
+    .man{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .man img{
+        margin: 0;
+    }
+}
+
+@media (max-width: 402px){
+    .a2{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        margin-top: 40px
+    }
+
+    .a2 a{
+        margin: 0;
+    }
+
+    .img1{
+        width: 300px;
+    }
+
+    .resNav > div{
+        flex-direction: column;
+    }
+}
+
+@media (max-width:350px) {
+    .img1{
+        width: 200px;
+    }
+}
