@@ -66,9 +66,9 @@
 #main{
     background: brown;
     min-height: 300px;
-    /* border-style: solid;
+    border-style: solid;
     border-width: 20px;
-    border-color: black; */
+    border-color: black;
     border-top: 20px red solid;
     border-left: solid 20px black;
     border-right: solid 20px blue;
@@ -105,15 +105,15 @@
     padding: 20px;
     border-radius: 30px;
     font-family: 'Nabla', cursive;
-    /* margin: 30px 10px; */
+    margin: 30px 10px;
     margin:0 50px 0 50px;
-    /* animation-name: boma;
+    animation-name: boma;
     animation-duration: 5s;
     animation-timing-function: ease;
     animation-delay: 1000ms;
     animation-direction: alternate;
     animation-fill-mode: both;
-    animation-iteration-count: infinite; */
+    animation-iteration-count: infinite;
     animation: boma 5s ease 1s both infinite;
 }
 
@@ -200,7 +200,7 @@
     }
     50%{
         margin-bottom: 35px;
-        transform: rotate(360deg);
+        transform: rotate(720deg);
         padding: 40px;
     }
     100%{
